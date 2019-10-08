@@ -19,10 +19,10 @@
     </ion-card-content>
     
   </ion-card>
-  <div class="ion-padding ion-text-center ion-margin-bottom">
+  <div class="ion-padding ion-text-center ">
       <h4>Vai dividir com quantos amigos?</h4>
       
-      <div class="box">
+      <div class="box ">
         <ion-button (click)="decrementar()">
             <ion-icon name="remove-circle"></ion-icon>
         </ion-button>
@@ -34,5 +34,11 @@
         </ion-button>
       </div> 
       <!--<ion-range pin="true" min="1" max="10" (ionChange)="atualizarComRange()" [(ngModel)]="divisor"></ion-range> --> 
+      
+  </div>
+  <div class="ion-padding">
+  <ion-button color='success' expand="block" [routerLink]="['/finalizar-compra', idPizza, divisor]" >
+    Continuar
+  </ion-button>
   </div>
 </ion-content>
